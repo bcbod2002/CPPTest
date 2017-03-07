@@ -18,6 +18,7 @@ private:
     };
     
     Node *head;
+    unsigned long long count = 0;
     
 public:
     void initList(void *firstData) {
@@ -25,9 +26,18 @@ public:
         head -> data = firstData;
         head -> next = NULL;
         head -> previous = NULL;
+        
+        count = 1;
     };
     
-    void deleteList();
+    void deleteList() {
+        Node *deletedNode = head;
+        while (deletedNode) {
+            head = head -> next;
+            delete deletedNode;
+            deletedNode = head;
+        }
+    };
     
     void appendNode(void *newData) {
         Node *newNode = new Node;
@@ -37,6 +47,8 @@ public:
         newNode -> next = NULL;
         
         lastNode -> next = newNode;
+        
+        ++count;
     };
     
     void deleteLast() {
@@ -60,11 +72,58 @@ public:
         return node;
     };
     
-    void deleteNode();
+    long unsigned int locationOfData(void* searchData) {
+        Node *node = head;
+        unsigned long long locate = 0;
+        while(node) {
+            
+            if (node -> data == searchData) {
+                return locate;
+            }
+            else {
+                if (node -> next) {
+                    node = node -> next;
+                    ++locate;
+                }
+                else {
+                    return NULL;
+                }
+            }
+        }
+        return NULL;
+    }
     
-    bool isExistData(T data);
+    void deleteData(void *data) {
+        Node *deleteNode = head;
+        while (deleteNode) {
+            if (deleteNode -> next) {
+                if (deleteNode -> data == data) {
+                    Node *previousNode = deleteNode -> previous;
+                    previousNode -> next = deleteNode -> next;
+                    deleteNode -> next -> previous = previousNode;
+                    delete deleteNode;
+                    
+                    return;
+                }
+                else {
+                    deleteNode = deleteNode -> next;
+                }
+            }
+        }
+    };
     
-    int numberOfNode();
+    bool isExistData(void* data) {
+        if (locationOfData(data)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    
+    unsigned long long numberOfNode() {
+        return count;
+    };
     
     void printAllNodes() {
         Node *node = head;
