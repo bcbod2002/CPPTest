@@ -52,12 +52,18 @@ void linkedListTest() {
     
     LinkedList<void *> *linkedList = new LinkedList<void *>;
     linkedList -> initList((void *)321);
-    for (int i = 0; i < 10000; i++) {
-        linkedList -> appendNode((void *)12333);
-    }
+//    for (int i = 0; i < 10000; i++) {
+//        linkedList -> appendNode((void *)12333);
+//    }
+    linkedList -> appendNode((void *)12333);
+    linkedList -> appendNode((void *)4444);
+    linkedList -> appendNode((void *)1111);
     printf("-----------\n");
     linkedList -> printAllNodes();
-    linkedList -> deleteLast();
+//    linkedList -> deleteLast();
+    printf("searchData = %d\n", linkedList -> locationOfData((void *)4444));
+//    linkedList -> deleteList();
+    linkedList -> deleteData((void *)4444);
     printf("-----------\n");
     linkedList -> printAllNodes();
 }
