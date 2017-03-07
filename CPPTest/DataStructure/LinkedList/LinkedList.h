@@ -138,6 +138,21 @@ public:
         }
     };
     
+    void* searchDataFromLocation(unsigned long long location) {
+        Node *searchNode = head;
+        unsigned long long searchedLocation = 0;
+        while (searchNode) {
+            if (searchedLocation == location) {
+                return searchNode -> data;
+            }
+            else {
+                searchNode = searchNode -> next;
+                ++searchedLocation;
+            }
+        }
+        return NULL;
+    }
+    
     unsigned long long numberOfNode() {
         return count;
     };

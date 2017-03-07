@@ -63,7 +63,8 @@ void linkedListTest() {
 //    linkedList -> deleteLast();
     printf("searchData = %d\n", linkedList -> locationOfData((void *)4444));
 //    linkedList -> deleteList();
-    linkedList -> deleteData((void *)4444);
+//    linkedList -> deleteData((void *)4444);
+    printf("search search data = %d\n", linkedList -> searchDataFromLocation(0));
     printf("-----------\n");
     linkedList -> printAllNodes();
 }
