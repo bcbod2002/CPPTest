@@ -8,11 +8,12 @@
 
 #include <iostream>
 #include "TopDowMergeSort.hpp"
-#include "GQueue.hpp"
+//#include "GQueue.hpp"
 #include "GCD.h"
 #include "LCM.h"
 #include "AP.h"
 #include "GP.h"
+#include "LinkedList.h"
 
 using std::cout;
 using std::endl;
@@ -45,6 +46,21 @@ struct Donkey : public Animal {
     }
 };
 
+void linkedListTest() {
+    
+    printf("Test linked list \n");
+    
+    LinkedList<void *> *linkedList = new LinkedList<void *>;
+    linkedList -> initList((void *)321);
+    for (int i = 0; i < 10000; i++) {
+        linkedList -> appendNode((void *)12333);
+    }
+    printf("-----------\n");
+    linkedList -> printAllNodes();
+    linkedList -> deleteLast();
+    printf("-----------\n");
+    linkedList -> printAllNodes();
+}
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -125,7 +141,9 @@ int main(int argc, const char * argv[]) {
     
     
     std::cout << "Hello, World!\n";
+    
+    
+    linkedListTest();
+    
     return 0;
-    
-    
 }
