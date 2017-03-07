@@ -20,6 +20,19 @@ private:
     Node *head;
     unsigned long long count = 0;
     
+    Node* getLastNode() {
+        Node *node = head;
+        while(node) {
+            if (node -> next) {
+                node = node -> next;
+            }
+            else {
+                break;
+            }
+        }
+        return node;
+    };
+    
 public:
     void initList(void *firstData) {
         head = new Node;
@@ -39,9 +52,9 @@ public:
         }
     };
     
-    void appendNode(void *newData) {
+    void appendData(void *newData) {
         Node *newNode = new Node;
-        Node *lastNode = getLast();
+        Node *lastNode = getLastNode();
         newNode -> data = newData;
         newNode -> previous = lastNode;
         newNode -> next = NULL;
@@ -52,24 +65,11 @@ public:
     };
     
     void deleteLast() {
-        Node *lastNode = getLast();
+        Node *lastNode = getLastNode();
         Node *afterLastNode = lastNode -> previous;
         afterLastNode -> next = NULL;
         
         delete lastNode;
-    };
-    
-    Node* getLast() {
-        Node *node = head;
-        while(node) {
-            if (node -> next) {
-                node = node -> next;
-            }
-            else {
-                break;
-            }
-        }
-        return node;
     };
     
     long unsigned int locationOfData(void* searchData) {
@@ -108,6 +108,23 @@ public:
                 else {
                     deleteNode = deleteNode -> next;
                 }
+            }
+        }
+    };
+    
+    void deleteDataFromLocation(unsigned long long location) {
+        Node *deleteNode = head;
+        unsigned long long numberOfLocation = 0;
+        while (deleteNode) {
+            if (numberOfLocation == location) {
+                deleteNode -> previous -> next = deleteNode -> next;
+                deleteNode -> next -> previous = deleteNode -> previous;
+                delete deleteNode;
+                return;
+            }
+            else {
+                deleteNode = deleteNode -> next;
+                ++numberOfLocation;
             }
         }
     };

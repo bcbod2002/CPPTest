@@ -55,9 +55,9 @@ void linkedListTest() {
 //    for (int i = 0; i < 10000; i++) {
 //        linkedList -> appendNode((void *)12333);
 //    }
-    linkedList -> appendNode((void *)12333);
-    linkedList -> appendNode((void *)4444);
-    linkedList -> appendNode((void *)1111);
+    linkedList -> appendData((void *)12333);
+    linkedList -> appendData((void *)4444);
+    linkedList -> appendData((void *)1111);
     printf("-----------\n");
     linkedList -> printAllNodes();
 //    linkedList -> deleteLast();
