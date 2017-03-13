@@ -14,6 +14,7 @@
 #include "AP.h"
 #include "GP.h"
 #include "LinkedList.h"
+#include "Queue.h"
 
 using std::cout;
 using std::endl;
@@ -67,6 +68,17 @@ void linkedListTest() {
     printf("search search data = %d\n", linkedList -> searchDataFromLocation(0));
     printf("-----------\n");
     linkedList -> printAllNodes();
+}
+
+void queueTest() {
+    printf("Test Queue \n");
+    Queue *queue = new Queue;
+    queue -> initQueue((void*) 3113);
+    queue -> enQueue((void*)40707);
+    queue -> enQueue((void*)290322);
+    queue -> printAllNodes();
+    printf("Dequeue = %d\n", queue -> deQueue());
+    queue -> printAllNodes();
 }
 
 int main(int argc, const char * argv[]) {
@@ -150,7 +162,9 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     
     
-    linkedListTest();
+//    linkedListTest();
+    
+    queueTest();
     
     return 0;
 }

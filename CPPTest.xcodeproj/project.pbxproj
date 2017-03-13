@@ -29,6 +29,7 @@
 		FC28A12E1E40DCF200B222F7 /* TopDowMergeSort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TopDowMergeSort.hpp; sourceTree = "<group>"; };
 		FC4F0A221E4360C1008240CD /* AP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AP.h; sourceTree = "<group>"; };
 		FC4F0A231E4364DF008240CD /* GP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GP.h; sourceTree = "<group>"; };
+		FC7DEBCE1E76456E000038D7 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		FC827A281E6E9F1E00DE7BA7 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		FC9B10B51D90499D00A0D06E /* CPPTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9B10B81D90499D00A0D06E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -152,6 +153,7 @@
 		FCA765081E55D1E800ABECF4 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
+				FC7DEBCE1E76456E000038D7 /* Queue.h */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
