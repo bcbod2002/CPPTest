@@ -14,8 +14,13 @@
 struct SingleNumber {
 public:
     int singleNumber(vector<int>& nums) {
-        
-        return 1;
+        if (nums.size() % 2 == 0) {
+            return 0;
+        }
+        for (unsigned long i = 1 ; i < nums.size() ; ++i) {
+            nums[0] ^= nums[i];
+        }
+        return nums.front();
     }
 };
 
