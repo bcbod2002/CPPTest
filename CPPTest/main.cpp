@@ -15,6 +15,16 @@
 #include "GP.h"
 #include "LinkedList.h"
 #include "Queue.h"
+#include "BinaryTree.h"
+
+//-------------------------
+// LeetCode
+#include "AddTwoNumbers.h"
+#include "PowerOfThree.h"
+#include "ReverseString.h"
+#include "ReverseStringII.h"
+#include "ReverseVowelsString.h"
+#include "SingleNumber.h"
 
 using std::cout;
 using std::endl;
@@ -79,6 +89,20 @@ void queueTest() {
     queue -> printAllNodes();
     printf("Dequeue = %d\n", queue -> deQueue());
     queue -> printAllNodes();
+}
+
+void testBinaryTree() {
+    BinaryTree *binaryTree = new BinaryTree;
+    binaryTree -> appendData((void*)1000);
+    binaryTree -> appendData((void*)2000);
+    binaryTree -> appendData((void*)3000);
+    binaryTree -> appendData((void*)1111);
+    binaryTree -> appendData((void*)2111);
+    binaryTree -> appendData((void*)3111);
+    
+//    binaryTree -> preorderTraversalPrint();
+//    binaryTree -> inorderTraversalPrint();
+    binaryTree -> levelOrderTraversalPrint();
 }
 
 int main(int argc, const char * argv[]) {
@@ -160,11 +184,6 @@ int main(int argc, const char * argv[]) {
     
     
     std::cout << "Hello, World!\n";
-    
-    
-//    linkedListTest();
-    
-    queueTest();
     
     return 0;
 }
