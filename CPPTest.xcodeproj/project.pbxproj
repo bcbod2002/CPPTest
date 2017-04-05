@@ -36,6 +36,7 @@
 		FC9085E41E9529320061F7CF /* AddTwoNumbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers.h; sourceTree = "<group>"; };
 		FC9085E51E9529FD0061F7CF /* PowerOfThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerOfThree.h; sourceTree = "<group>"; };
 		FC9085E61E952A590061F7CF /* ReverseString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseString.h; sourceTree = "<group>"; };
+		FC9085E71E952B470061F7CF /* ReverseStringII.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseStringII.h; sourceTree = "<group>"; };
 		FC9B10B51D90499D00A0D06E /* CPPTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPPTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9B10B81D90499D00A0D06E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FC9B10C41D904A2900A0D06E /* Animal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animal.cpp; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 				FC9085E41E9529320061F7CF /* AddTwoNumbers.h */,
 				FC9085E51E9529FD0061F7CF /* PowerOfThree.h */,
 				FC9085E61E952A590061F7CF /* ReverseString.h */,
+				FC9085E71E952B470061F7CF /* ReverseStringII.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
