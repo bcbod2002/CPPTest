@@ -27,6 +27,7 @@
 #include "ReverseVowelsString.h"
 #include "SingleNumber.h"
 #include "SumOfTwoIntegers.h"
+#include "ValidPerfectSquare.h"
 
 using std::cout;
 using std::endl;
@@ -127,6 +128,17 @@ void testSumOfTwoIntegers() {
     cout << "Two integers = " << twoIntegers.getSum(43105, 4921) << endl;
 }
 
+void testValidPerfectSquare() {
+    ValidPerfectSquare perfectSquare;
+    if (perfectSquare.isPerfectSquare(2147483647)) {
+//    if (perfectSquare.isPerfectSquare(100)) {
+        cout << "Yes Yes" << endl;
+    }
+    else {
+        cout << "NO NO NO" << endl;
+    }
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     
@@ -209,6 +221,7 @@ int main(int argc, const char * argv[]) {
     
     testSingleNumber();
     testSumOfTwoIntegers();
+    testValidPerfectSquare();
     
     return 0;
 }
