@@ -28,6 +28,7 @@
 #include "SingleNumber.h"
 #include "SumOfTwoIntegers.h"
 #include "ValidPerfectSquare.h"
+#include "SearchInsertPosition.h"
 
 using std::cout;
 using std::endl;
@@ -139,6 +140,13 @@ void testValidPerfectSquare() {
     }
 }
 
+void testSearchInsertPosition() {
+    SearchInsertPosition insertPosition;
+    
+    vector<int> vector {1, 3, 5, 6, 7, 8, 10, 13, 19, 26};
+    cout << "result : " << insertPosition.searchInsert(vector, 2) << endl;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     
@@ -219,9 +227,10 @@ int main(int argc, const char * argv[]) {
     
     std::cout << "Hello, World!\n";
     
-    testSingleNumber();
-    testSumOfTwoIntegers();
-    testValidPerfectSquare();
+//    testSingleNumber();
+//    testSumOfTwoIntegers();
+//    testValidPerfectSquare();
+    testSearchInsertPosition();
     
     return 0;
 }
