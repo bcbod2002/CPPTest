@@ -29,6 +29,7 @@
 		FC22ED441E4238DC00AF5573 /* LCM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCM.h; sourceTree = "<group>"; };
 		FC28A12E1E40DCF200B222F7 /* TopDowMergeSort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TopDowMergeSort.hpp; sourceTree = "<group>"; };
 		FC37CB5E1E95EFD700DE0A32 /* SumOfTwoIntegers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumOfTwoIntegers.h; sourceTree = "<group>"; };
+		FC37CB5F1E9600A700DE0A32 /* ValidPerfectSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidPerfectSquare.h; sourceTree = "<group>"; };
 		FC4F0A221E4360C1008240CD /* AP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AP.h; sourceTree = "<group>"; };
 		FC4F0A231E4364DF008240CD /* GP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GP.h; sourceTree = "<group>"; };
 		FC7DEBCE1E76456E000038D7 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 				FC9085E71E952B470061F7CF /* ReverseStringII.h */,
 				FC9085E81E952BA10061F7CF /* ReverseVowelsString.h */,
 				FC37CB5E1E95EFD700DE0A32 /* SumOfTwoIntegers.h */,
+				FC37CB5F1E9600A700DE0A32 /* ValidPerfectSquare.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
