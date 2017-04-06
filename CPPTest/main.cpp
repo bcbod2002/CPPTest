@@ -26,6 +26,7 @@
 #include "ReverseStringII.h"
 #include "ReverseVowelsString.h"
 #include "SingleNumber.h"
+#include "SumOfTwoIntegers.h"
 
 using std::cout;
 using std::endl;
@@ -121,6 +122,11 @@ void testSingleNumber() {
     cout << "Result is : " << result << endl;
 }
 
+void testSumOfTwoIntegers() {
+    SumOfTwoIntegers twoIntegers;
+    cout << "Two integers = " << twoIntegers.getSum(43105, 4921) << endl;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     
@@ -202,7 +208,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     
     testSingleNumber();
-    
+    testSumOfTwoIntegers();
     
     return 0;
 }
