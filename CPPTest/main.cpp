@@ -29,6 +29,7 @@
 #include "SumOfTwoIntegers.h"
 #include "ValidPerfectSquare.h"
 #include "SearchInsertPosition.h"
+#include "ReverseInteger.h"
 
 using std::cout;
 using std::endl;
@@ -147,6 +148,12 @@ void testSearchInsertPosition() {
     cout << "result : " << insertPosition.searchInsert(vector, 2) << endl;
 }
 
+void testReverseInteger() {
+    ReverseInteger reverseInteger;
+    
+    cout << "result : " << reverseInteger.reverse(1534236469) << endl;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     
@@ -230,7 +237,8 @@ int main(int argc, const char * argv[]) {
 //    testSingleNumber();
 //    testSumOfTwoIntegers();
 //    testValidPerfectSquare();
-    testSearchInsertPosition();
+//    testSearchInsertPosition();
+    testReverseInteger();
     
     return 0;
 }
