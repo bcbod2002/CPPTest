@@ -46,6 +46,7 @@
 		FC9B10B81D90499D00A0D06E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FC9B10C41D904A2900A0D06E /* Animal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animal.cpp; sourceTree = "<group>"; };
 		FC9B10C51D904A2900A0D06E /* Animal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Animal.hpp; sourceTree = "<group>"; };
+		FCFDEC011E9BB8EF00BAEAF2 /* RomanToInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RomanToInteger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +118,7 @@
 				FC37CB5F1E9600A700DE0A32 /* ValidPerfectSquare.h */,
 				FC37CB601E967CAA00DE0A32 /* SearchInsertPosition.h */,
 				FC37CB611E96A63200DE0A32 /* ReverseInteger.h */,
+				FCFDEC011E9BB8EF00BAEAF2 /* RomanToInteger.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
