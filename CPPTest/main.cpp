@@ -30,6 +30,7 @@
 #include "ValidPerfectSquare.h"
 #include "SearchInsertPosition.h"
 #include "ReverseInteger.h"
+#include "RomanToInteger.h"
 
 using std::cout;
 using std::endl;
@@ -154,6 +155,13 @@ void testReverseInteger() {
     cout << "result : " << reverseInteger.reverse(1534236469) << endl;
 }
 
+void testRomanToInteger() {
+    RomanToInteger romanInteger;
+//    cout << "result : " << romanInteger.romanToInt("XV") << endl;
+//    cout << "result : " << romanInteger.romanToInt("MDCLXVI") << endl;
+    cout << "result : " << romanInteger.romanToInt("DCXXI") << endl;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     
@@ -238,7 +246,8 @@ int main(int argc, const char * argv[]) {
 //    testSumOfTwoIntegers();
 //    testValidPerfectSquare();
 //    testSearchInsertPosition();
-    testReverseInteger();
+//    testReverseInteger();
+    testRomanToInteger();
     
     return 0;
 }
