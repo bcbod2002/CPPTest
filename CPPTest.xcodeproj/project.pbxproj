@@ -31,6 +31,7 @@
 		FC37CB5E1E95EFD700DE0A32 /* SumOfTwoIntegers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumOfTwoIntegers.h; sourceTree = "<group>"; };
 		FC37CB5F1E9600A700DE0A32 /* ValidPerfectSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidPerfectSquare.h; sourceTree = "<group>"; };
 		FC37CB601E967CAA00DE0A32 /* SearchInsertPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchInsertPosition.h; sourceTree = "<group>"; };
+		FC37CB611E96A63200DE0A32 /* ReverseInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseInteger.h; sourceTree = "<group>"; };
 		FC4F0A221E4360C1008240CD /* AP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AP.h; sourceTree = "<group>"; };
 		FC4F0A231E4364DF008240CD /* GP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GP.h; sourceTree = "<group>"; };
 		FC7DEBCE1E76456E000038D7 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				FC37CB5E1E95EFD700DE0A32 /* SumOfTwoIntegers.h */,
 				FC37CB5F1E9600A700DE0A32 /* ValidPerfectSquare.h */,
 				FC37CB601E967CAA00DE0A32 /* SearchInsertPosition.h */,
+				FC37CB611E96A63200DE0A32 /* ReverseInteger.h */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
