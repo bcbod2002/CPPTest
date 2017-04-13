@@ -31,6 +31,7 @@
 #include "SearchInsertPosition.h"
 #include "ReverseInteger.h"
 #include "RomanToInteger.h"
+#include "MergeTwoSortedLists.h"
 
 using std::cout;
 using std::endl;
@@ -162,6 +163,32 @@ void testRomanToInteger() {
     cout << "result : " << romanInteger.romanToInt("DCXXI") << endl;
 }
 
+void testMergeTwoSortedLists() {
+    
+    MergeTwoSortedLists::ListNode *l1 = new MergeTwoSortedLists::ListNode(1);
+    MergeTwoSortedLists::ListNode *l1Tail = l1;
+    for (int i = 3; i < 10; i = i + 2) {
+        MergeTwoSortedLists::ListNode *nextNode = new MergeTwoSortedLists::ListNode(i);
+        l1Tail -> next = nextNode;
+        l1Tail = nextNode;
+    }
+    
+    MergeTwoSortedLists::ListNode *l2 = new MergeTwoSortedLists::ListNode(0);
+    MergeTwoSortedLists::ListNode *l2Tail = l2;
+    for (int i = 2; i < 10; i = i + 2) {
+        MergeTwoSortedLists::ListNode *nextNode = new MergeTwoSortedLists::ListNode(i);
+        l2Tail -> next = nextNode;
+        l2Tail = nextNode;
+    }
+    
+    MergeTwoSortedLists mergeList;
+    MergeTwoSortedLists::ListNode *result = mergeList.mergeTwoLists(l1, l2);
+    while (result) {
+        printf("resultNode -> value = %d\n", result -> val);
+        result = result -> next;
+    }
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     
@@ -247,7 +274,8 @@ int main(int argc, const char * argv[]) {
 //    testValidPerfectSquare();
 //    testSearchInsertPosition();
 //    testReverseInteger();
-    testRomanToInteger();
+//    testRomanToInteger();
+    testMergeTwoSortedLists();
     
     return 0;
 }
